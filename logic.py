@@ -60,7 +60,7 @@ class DB_Manager:
 
     def insert_project(self, data):
         sql = """
-        INSERT INTO projects(iser_id,project_name,url,status_id)
+        INSERT INTO projects(user_id,project_name,url,status_id)
         values(?,?,?,?)"""
         self.__executemany(sql, data)
 
